@@ -1,8 +1,6 @@
 package DinerPancakeHouseMerge;
 
-import java.util.Iterator;
-
-public class DinerMenu implements Menu{
+public class DinerMenu extends MenuComponent{
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -26,7 +24,7 @@ public class DinerMenu implements Menu{
         }
     }
 
-    public Iterator<MenuItem> createIterator() {
-        return new DinerMenuIterator(menuItems);
-    }
+    // public Iterator<MenuItem> createIterator() {
+    //     return new DinerMenuIterator(menuItems);
+    // }
 }

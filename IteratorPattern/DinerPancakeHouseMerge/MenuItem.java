@@ -1,6 +1,6 @@
 package DinerPancakeHouseMerge;
 
-public class MenuItem {
+public class MenuItem extends MenuComponent {
 
     String name;
     String description;
@@ -30,4 +30,12 @@ public class MenuItem {
         return price;
     }
 
+    public void print() {
+        System.out.print(" " + getName());
+        if (isVegetarian()) {
+            System.out.print("(v)");
+        }
+        System.out.println(", " + getPrice());
+        System.out.println("    -- " + getDescription());
+    }
 }

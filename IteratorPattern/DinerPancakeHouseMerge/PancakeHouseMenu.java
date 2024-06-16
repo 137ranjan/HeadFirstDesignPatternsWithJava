@@ -2,9 +2,8 @@ package DinerPancakeHouseMerge;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Iterator;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu extends MenuComponent{
     List<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
@@ -20,7 +19,7 @@ public class PancakeHouseMenu implements Menu {
         menuItems.add(menuItem);
     }
 
-    public Iterator<MenuItem> createIterator() {
-        return menuItems.iterator();
-    }
+    // public Iterator<MenuItem> createIterator() {
+    //     return menuItems.iterator();
+    // }
 }
